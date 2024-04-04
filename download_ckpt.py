@@ -26,5 +26,6 @@ if __name__ == "__main__":
     }
     for ckpt_name, ckpt_url in ckpts.items():
         print(f"Downloading checkpoint: {ckpt_name}")
-        download_checkpoint(ckpt_url, ckpt_name)
+        download_checkpoint(ckpt_url, '/work/zhang-capra/users/elh245/{ckpt_name}')
+        #download_checkpoint(ckpt_url, f'{ckpt_name}')
 

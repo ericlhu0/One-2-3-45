@@ -440,7 +440,7 @@ def init_bbox(image):
 
 def run_demo(
         device_idx=_GPU_INDEX,
-        ckpt='zero123-xl.ckpt'):
+        ckpt='/work/zhang-capra/users/elh245/' + 'zero123-xl.ckpt'):
 
     device = f"cuda:{device_idx}" if torch.cuda.is_available() else "cpu"
     models = init_model(device, os.path.join(code_dir, 'zero123-xl.ckpt'), half_precision=_HALF_PRECISION)
